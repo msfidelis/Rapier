@@ -1,0 +1,22 @@
+{
+    "name": "msfidelis/rapier",
+    "description": "Framework para Command Line em PHP",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Matheus Fidelis",
+            "email": "msfidelis01@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "~2.5",
+        "phpunit/phpunit": "*"
+
+    },
+    "autoload": {
+        "psr-4": {
+          "Rapier\\": "./src",
+          "Tests\\": "./tests"
+        }
+    }
+}
