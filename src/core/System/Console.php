@@ -1,7 +1,7 @@
 <?php
-namespace Rapier\System;
+namespace Rapier\core\System;
 
-use Rapier\Interfaces\Command;
+use Rapier\core\System\ClientInterface;
 
 /**
  * Created by PhpStorm.
@@ -9,15 +9,17 @@ use Rapier\Interfaces\Command;
  * Date: 02/02/17
  * Time: 14:50
  */
-class Console  {
+class Console  extends ClientInterface {
 
     private $command;
 
     public function __construct(Command $command) {
+        parent::__construct();
         $this->command = new $command();
     }
 
-    public function run()
+    public function run() {
+    }
 
 
 }
